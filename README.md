@@ -61,7 +61,7 @@ For example:
 
 Install [VS Code stylelint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-stylelint) and create `.vscode/settings.json`
 
-```json
+```jsonc
 {
   "stylelint.enable": true,
   "stylelint.validate": ["css", "html", "vue"],
