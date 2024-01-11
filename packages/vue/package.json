@@ -1,0 +1,37 @@
+{
+    "name": "@yutengjing/stylelint-config-vue",
+    "version": "0.0.0",
+    "description": "stylelint config for vue",
+    "author": {
+        "name": "YuTengjing",
+        "url": "https://github.com/tjx666",
+        "email": "ytj2713151713@gmail.com"
+    },
+    "license": "MIT",
+    "homepage": "https://github.com/tjx666/stylelint-config",
+    "keywords": [
+        "stylelint",
+        "stylelint-config",
+        "standard",
+        "order",
+        "html",
+        "vue"
+    ],
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org/",
+        "access": "public"
+    },
+    "type": "module",
+    "exports": "./index.js",
+    "files": [
+        "index.js"
+    ],
+    "peerDependencies": {
+        "stylelint": "^16"
+    },
+    "dependencies": {
+        "@yutengjing/stylelint-config-basic": "workspace:*",
+        "stylelint-config-recommended-vue": "^1.5.0",
+        "stylelint-define-config": "^1.1.0"
+    }
+}

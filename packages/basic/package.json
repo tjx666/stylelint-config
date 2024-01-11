@@ -1,0 +1,39 @@
+{
+    "name": "@yutengjing/stylelint-config-basic",
+    "version": "0.0.0",
+    "description": "basic stylelint config",
+    "author": {
+        "name": "YuTengjing",
+        "url": "https://github.com/tjx666",
+        "email": "ytj2713151713@gmail.com"
+    },
+    "license": "MIT",
+    "homepage": "https://github.com/tjx666/stylelint-config",
+    "keywords": [
+        "stylelint",
+        "stylelint-config",
+        "standard",
+        "order",
+        "html"
+    ],
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org/",
+        "access": "public"
+    },
+    "type": "module",
+    "exports": "./index.js",
+    "files": [
+        "index.js"
+    ],
+    "peerDependencies": {
+        "stylelint": "^16"
+    },
+    "dependencies": {
+        "postcss-html": "^1.5.0",
+        "stylelint-config-html": "^1.1.0",
+        "stylelint-config-recess-order": "^4.4.0",
+        "stylelint-config-standard": "^36.0.0",
+        "stylelint-declaration-block-no-ignored-properties": "^2.8.0",
+        "stylelint-define-config": "^1.1.0"
+    }
+}

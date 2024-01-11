@@ -1,0 +1,12 @@
+{
+    "name": "simple-test",
+    "stylelint": {
+        "extends": "@yutengjing/stylelint-config-vue"
+    },
+    "scripts": {
+        "test": "stylelint *.{css,html,vue}"
+    },
+    "devDependencies": {
+        "@yutengjing/stylelint-config-vue": "workspace:*"
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "name": "@yutengjing/stylelint-config-monorepo",
+    "version": "0.0.0",
+    "private": true,
+    "author": {
+        "name": "YuTengjing",
+        "url": "https://github.com/tjx666",
+        "email": "ytj2713151713@gmail.com"
+    },
+    "license": "MIT",
+    "eslintConfig": {
+        "extends": "@yutengjing/eslint-config-basic"
+    },
+    "prettier": "@yutengjing/prettier-config",
+    "lint-staged": {
+        "*.{js,jsx,ts,tsx,json,md}": "prettier --write"
+    },
+    "simple-git-hooks": {
+        "pre-commit": "npx lint-staged"
+    },
+    "scripts": {
+        "preinstall": "npx only-allow pnpm",
+        "clean": "rm -rf node_modules && pnpm -r --parallel exec rm -rf node_modules",
+        "reinstall": "rm -f pnpm-lock.yaml && pnpm clean && pnpm install",
+        "test": "pnpm -r test",
+        "release": "bumpp -c \"release: v%s\" package.json packages/*/package.json && pnpm -r publish"
+    },
+    "devDependencies": {
+        "@yutengjing/prettier-config": "^1.0.0",
+        "bumpp": "^9.2.1",
+        "eslint": "^8.56.0",
+        "lint-staged": "^15.2.0",
+        "prettier": "^3.1.1",
+        "react": "^18.2.0",
+        "rimraf": "^5.0.5",
+        "simple-git-hooks": "^2.9.0",
+        "stylelint": "^16.1.0",
+        "typescript": "^5.3.3"
+    }
+}
